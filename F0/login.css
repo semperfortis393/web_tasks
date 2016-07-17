@@ -1,0 +1,78 @@
+body{
+  background-image: url(white.jpg);
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+  display: block;
+  margin-left: 30px;
+  margin-top: 4px;
+  float: left;
+}
+.box{
+  width: 20%;
+  height: 15%;
+  background-color:rgba(221, 217, 221, 0.43);
+  border: rgba(126, 124, 124, 0.48) solid 2px;
+  padding: 60px;;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+.text{
+  margin-top: 8px;
+  margin-left: 40px;
+}
+.check{
+  margin-top: 5px;
+  margin-left: 40px;
+}
+.login-signup{
+  width: 156px;
+  height: 26px;
+  margin-top: 5px;
+  margin-left: 40px;
+  background-color: rgb(210, 210, 209);
+  font-size: 11px;
+}
+.input{
+  width: 150px;
+  height: 20px;
+}
+#passowrd{
+
+}
+#checkword{
+  display:inline;
+  font-size: 12px;
+}
+
+#login{
+  border: none;
+  background-color: rgb(210, 210, 209);
+  display: block;
+  float: left;
+  margin-left: 20px;
+  margin-top: 5px;
+  padding: 0;
+  color: #999;
+}
+#signup{
+  display: block;
+  margin-top: 7px;
+  margin-left: 65px;
+}
+
+a:link{
+  color: #999;
+}
+a:visited{
+  color: #999;
+}
+a:hover{
+  color: rgb(60, 60, 60);
+}
+a:active{
+  color: rgb(60, 60, 60);
+}
