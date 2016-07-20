@@ -40,9 +40,6 @@ a{
   width: 150px;
   height: 20px;
 }
-#passowrd{
-
-}
 #checkword{
   display:inline;
   font-size: 12px;
@@ -63,7 +60,11 @@ a{
   margin-top: 7px;
   margin-left: 65px;
 }
-
+#button{
+  border: rgb(210, 210, 209);
+  height: 15px;
+  width: 15px;
+}
 a:link{
   color: #999;
 }

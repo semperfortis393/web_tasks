@@ -12,9 +12,21 @@
           <input type="text" name="name" value="" class="input" placeholder="请输入账号">
         </div>
         <div class="text">
-          <span id="pass">
-            <input type="password" name="name" value="" class="input" placeholder="请输入密码" >
-          </span>
+            <input type="password" name="name" value="" class="input" id="ps" placeholder="请输入密码" >
+            <button type="button" name="button" onclick="text()" id="button">
+            </button>
+            <script type="text/javascript">
+              function text(){
+                if (document.getElementById("ps").type=="password")
+                {
+                  document.getElementById("ps").type="text";
+                }
+                else {
+                  document.getElementById("ps").type="password";
+                }
+
+              }
+            </script>
         </div>
         <div class="check">
           <input type="checkbox" name="name" value="" id="check">
