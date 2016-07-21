@@ -20,7 +20,7 @@ a{
   margin-right: auto;
   margin-top: 15%;
 }
-.text{
+.password{
   margin-top: 8px;
   margin-left: 40px;
 }
@@ -29,20 +29,23 @@ a{
   margin-left: 40px;
 }
 .login-signup{
-  width: 156px;
+  width: 206px;
   height: 26px;
   margin-top: 5px;
   margin-left: 40px;
   background-color: rgb(210, 210, 209);
-  font-size: 11px;
+  font-size: 1em;
 }
 .input{
-  width: 150px;
-  height: 20px;
+  width: 200px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1em;
 }
 #checkword{
   display:inline;
-  font-size: 12px;
+  font-size: 1em;
 }
 
 #login{
@@ -50,20 +53,21 @@ a{
   background-color: rgb(210, 210, 209);
   display: block;
   float: left;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 5px;
   padding: 0;
-  color: #999;
 }
 #signup{
   display: block;
-  margin-top: 7px;
-  margin-left: 65px;
+  margin-top: 5px;
+  margin-left: 80px;
 }
 #button{
   border: rgb(210, 210, 209);
+  background-color:rgb(210, 210, 209);
   height: 15px;
   width: 15px;
+  border-radius: 5px;
 }
 a:link{
   color: #999;
@@ -76,4 +80,7 @@ a:hover{
 }
 a:active{
   color: rgb(60, 60, 60);
+}
+#button:hover{
+  background-color: rgba(60, 60, 60, 0.4);
 }

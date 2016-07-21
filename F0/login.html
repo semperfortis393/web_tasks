@@ -4,30 +4,19 @@
     <meta charset="utf-8">
     <title>login</title>
     <link rel="stylesheet" href="login.css" media="screen" charset="utf-8">
+    <script type="text/javascript" src="button.js"></script>
   </head>
   <body>
     <div class="box">
       <form class="" action="index.html" method="post">
-        <div class="text">
+        <div class="password">
           <input type="text" name="name" value="" class="input" placeholder="请输入账号">
         </div>
-        <div class="text">
-            <input type="password" name="name" value="" class="input" id="ps" placeholder="请输入密码" >
+        <div class="password">
+            <input type="password" name="name" value="" class="input" id="pwd" placeholder="请输入密码" >
             <button type="button" name="button" onclick="text()" id="button">
             </button>
-            <script type="text/javascript">
-              function text(){
-                if (document.getElementById("ps").type=="password")
-                {
-                  document.getElementById("ps").type="text";
-                }
-                else {
-                  document.getElementById("ps").type="password";
-                }
-
-              }
-            </script>
-        </div>
+       </div>
         <div class="check">
           <input type="checkbox" name="name" value="" id="check">
           <p id="checkword">
@@ -35,7 +24,7 @@
           </p>
         </div>
         <div class="login-signup">
-          <button type="submint" name="button" id="login">登录</button>
+          <a href="#" id="login">登录</a>
           <a href="#" id="signup">注册</a>
         </div>
       </form>
