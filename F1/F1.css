@@ -1,0 +1,54 @@
+*{
+margin:0;
+padding:0;
+}
+.container{
+width:400px;
+height:200px;
+margin:20px auto 0;
+}
+.content{
+/*所有的图片都初始化为不显示，并设置绝对定位*/
+display:none;
+position:absolute;
+}
+.content a img{
+/*设置图片默认宽度高度*/
+width:400px;
+height:200px;
+}
+.btn{
+position:relative;
+float:right;
+right: 10px;
+top:180px;
+z-index: 9999;
+/*设置按钮在最顶层*/
+}
+.btn ul li{
+width:10px;
+height:10px;
+border-radius:50%;
+list-style-type:none;
+display:inline-block;
+background: rgba(152, 152, 152, 0.77);
+cursor:pointer;
+}
+.btn ul li.but{
+background: rgba(102, 102, 102, 0.9);
+}
+.left{
+position: relative;
+float: left;
+top: 80px;
+z-index: 9999;
+background-color: rgba(152, 152, 152, 0.77);
+}
+.right{
+position: relative;
+float: right;
+top: 80px;
+z-index: 9999;
+background-color: rgba(152, 152, 152, 0.77);
+
+}
