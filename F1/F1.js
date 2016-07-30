@@ -1,6 +1,4 @@
-console.log(i)
 var size = $(".pic>li").length;
-console.log(i)
 
 var i = 0;
 $(".left").click(function(){
@@ -42,15 +40,3 @@ $(".container .content").eq(i).fadeIn().siblings().fadeOut();
 $(".btn ul li").eq(i).addClass("but").siblings().removeClass("but");
 }
 setInterval("start()", 3000);
-
-// $(document).ready(function(){
-// 						$(window).resize(function(){
-// 							$('.left').css({
-// 								position:'absolute',
-// 								// left: ($(window).width() - $('.container').outerWidth())/2,
-// 								top: ($(window).height() - $('.left').outerHeight())/4
-// 							});
-// 						});
-// 						// 最初运行函数
-// 						$(window).resize();
-// 					});
