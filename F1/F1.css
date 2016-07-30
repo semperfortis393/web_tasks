@@ -47,23 +47,21 @@ background:  rgb(250, 210, 89);
 position: relative;
 float: left;
 margin-left: -50px;
-height: 40px;
-width: 30px;
 top: 150px;
 z-index: 9999;
-color: rgb(250, 210, 89);
-font-size: 3em;
 cursor: pointer;
+}
+.left:hover{
+  background-color: rgba(152, 152, 152, 0.6);
+}
+.right:hover{
+  background-color: rgba(152, 152, 152, 0.6);
 }
 .right{
 position: relative;
 float: right;
-height: 40px;
-width: 30px;
 top: 150px;
 z-index: 9999;
-color:  rgb(250, 210, 89);
-font-size: 3em;
 cursor: pointer;
 }
 .bottom-word{
