@@ -7,12 +7,15 @@ width:400px;
 height:200px;
 margin:20px auto 0;
 }
+.pic{
+  list-style-type: none;
+}
 .content{
 /*所有的图片都初始化为不显示，并设置绝对定位*/
 display:none;
 position:absolute;
 }
-.content a img{
+.content img{
 /*设置图片默认宽度高度*/
 width:400px;
 height:200px;
@@ -40,15 +43,22 @@ background: rgba(102, 102, 102, 0.9);
 .left{
 position: relative;
 float: left;
+height: 40px;
+width: 30px;
 top: 80px;
 z-index: 9999;
 background-color: rgba(152, 152, 152, 0.77);
+font-size: 3em;
+cursor: w-resize;
 }
 .right{
 position: relative;
 float: right;
+height: 40px;
+width: 30px;
 top: 80px;
 z-index: 9999;
 background-color: rgba(152, 152, 152, 0.77);
-
+font-size: 3em;
+cursor: e-resize;
 }

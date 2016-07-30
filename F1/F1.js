@@ -1,8 +1,26 @@
+console.log(i)
+var size = $(".pic>li").length;
+console.log(i)
+
 var i = 0;
 $(".left").click(function(){
-  $(".container .content").eq("this-1").fadeIn().siblings().fadeOut();
-  $(this).addClass("but").siblings().removeClass("but");
+  i--;
+  if(i == -1){
+  i = size-1;
+  }
+  $(".container .content").eq(i).fadeIn(300).siblings().fadeOut(300);
+  $(".btn-ul li").eq(i).addClass("but").siblings().removeClass("but");
 });
+
+$(".right").click(function(){
+  i++;
+  if(i == size){
+    i = 0;
+  }
+  $(".container .content").eq(i).fadeIn(300).siblings().fadeOut(300);
+  $(".btn-ul li").eq(i).addClass("but").siblings().removeClass("but");
+})
+
 
 $(".btn ul li").hover(function () {
 i = $(this).index();
@@ -12,6 +30,7 @@ $(".container .content").eq(i).fadeIn().siblings().fadeOut();
 // 清除样式
 $(this).addClass("but").siblings().removeClass("but");
 });
+
 // 定时轮播
 function start() {
 i++;
@@ -23,3 +42,15 @@ $(".container .content").eq(i).fadeIn().siblings().fadeOut();
 $(".btn ul li").eq(i).addClass("but").siblings().removeClass("but");
 }
 setInterval("start()", 3000);
+
+// $(document).ready(function(){
+// 						$(window).resize(function(){
+// 							$('.left').css({
+// 								position:'absolute',
+// 								// left: ($(window).width() - $('.container').outerWidth())/2,
+// 								top: ($(window).height() - $('.left').outerHeight())/4
+// 							});
+// 						});
+// 						// 最初运行函数
+// 						$(window).resize();
+// 					});
