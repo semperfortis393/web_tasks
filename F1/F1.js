@@ -19,14 +19,22 @@ $(".right").click(function(){
 });
 
 // 显示隐藏左右按钮
-$(".container").mouseenter(function(){
-  $(".left").fadeIn("slow");
-  $(".right").fadeIn("slow");
-  $(".container").mouseleave(function(){
-    $(".left").fadeOut("slow");
-    $(".right").fadeOut("slow");
+  $(".container").mouseenter(function(){
+    $(".left").animate({
+      opacity:'1',
+    });
+    $(".right").animate({
+      opacity:'1',
+    });
   });
-});
+  $(".container").mouseleave(function(){
+    $(".left").animate({
+      opacity:'0',
+    });
+    $(".right").animate({
+      opacity:'0',
+    });
+  });
 
 
 $(".btn ul li").hover(function () {
