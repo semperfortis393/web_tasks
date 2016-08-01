@@ -18,9 +18,15 @@ $(".right").click(function(){
   $(".btn-ul li").eq(i).addClass("but").siblings().removeClass("but");
 });
 
-$(".container").hover(function(){
-  clearInterval(timer)
-})
+// 显示隐藏左右按钮
+$(".container").mouseenter(function(){
+  $(".left").fadeIn("slow");
+  $(".right").fadeIn("slow");
+  $(".container").mouseleave(function(){
+    $(".left").fadeOut("slow");
+    $(".right").fadeOut("slow");
+  });
+});
 
 
 $(".btn ul li").hover(function () {
