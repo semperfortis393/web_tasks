@@ -1,0 +1,41 @@
+$input-width:300px;
+$word-size:18px;
+
+
+.login{
+  position: relative;
+}
+input{
+  font:$word-size roboto;
+  margin-top: 20px;
+  width: $input-width;
+  display: block;
+  border: none;
+  color: #08192D;
+}
+input:focus{
+  outline: none;
+}
+.line{
+  position: relative;
+  display: block;
+  height: 2px;
+  width: $input-width;
+  background-color: #BDC0BA;
+}
+label{
+  position: absolute;
+  top:4px;
+  left: 5px;
+  font-size: $word-size;
+  transition: 0.5s ease;
+  color: #91989F;
+}
+input:focus ~ label{
+  top:-15px;
+  font-size: 14px;
+  color: #58B2DC;
+}
+input:valid ~ label{
+  top:-15px;
+  font-size: 14px;}
