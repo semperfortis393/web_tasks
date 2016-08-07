@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" name="viewport" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
   <title></title>
     <link href="index.css" rel="stylesheet" type="text/css"/>
   </head>
-  <form>
-    <body>
+  <body>
+    <form>
       <div class="container">
         <div class="title">
-          <input type="text"  required>
+          <input type="text"  required minlength="10">
           <span class="line"></span>
           <label for="">Title</label>
         </div>
@@ -21,15 +21,17 @@
         <div class="location">
           <input type="text"  required>
           <span class="line"></span>
-          <label for="">Specific Location(optional)</label>
+          <label for="">Specific </label>
         </div>
         <div class="des">
           <input type="text"  required>
-          <!-- <span class="line"></span> -->
           <label for="">Description</label>
         </div>
+        <div class="login">
+          <input type="submit" name="name" value="login" id="login">
+        </div>
       </div>
-    </body>
-
   </form>
+</body>
+
 </html>

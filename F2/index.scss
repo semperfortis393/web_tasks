@@ -65,10 +65,13 @@ input:valid ~ label{
 }
 .location{
   float: right;
-  width: 59.5%;
+  width: calc(60%-2px);
   border-left: 2px #BDC0BA solid;
 }
 .des{
   float: left;
   width: 100%;
+}
+#login{
+  padding-top: 0;
 }
