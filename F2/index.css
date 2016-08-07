@@ -1,10 +1,19 @@
-.login {
+.title, .price, .location, .des {
   position: relative; }
 
+@media screen and (min-device-width: 600px) {
+  .container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; } }
+@media screen and (max-device-width: 600px) {
+  .container {
+    width: 100%; } }
 input {
-  font: 18px roboto;
-  margin-top: 20px;
-  width: 300px;
+  font: 1em roboto;
+  padding-top: 20px;
+  width: 100%;
+  height: 30px;
   display: block;
   border: none;
   color: #08192D; }
@@ -16,24 +25,41 @@ input:focus {
   position: relative;
   display: block;
   height: 2px;
-  width: 300px;
+  width: 100%;
   background-color: #BDC0BA; }
 
 label {
   position: absolute;
-  top: 4px;
-  left: 5px;
-  font-size: 18px;
+  top: 55%;
+  left: 1.5%;
+  font-size: 1em;
   transition: 0.5s ease;
   color: #91989F; }
 
 input:focus ~ label {
-  top: -15px;
-  font-size: 14px;
+  top: -0.5%;
+  font-size: 0.8em;
   color: #58B2DC; }
 
 input:valid ~ label {
-  top: -15px;
-  font-size: 14px; }
+  top: -0.5%;
+  font-size: 0.8em; }
+
+.title {
+  float: left;
+  width: 100%; }
+
+.price {
+  float: left;
+  width: 40%; }
+
+.location {
+  float: right;
+  width: 59.5%;
+  border-left: 2px #BDC0BA solid; }
+
+.des {
+  float: left;
+  width: 100%; }
 
 /*# sourceMappingURL=index.css.map */
