@@ -9,29 +9,31 @@
     <form>
       <div class="container">
         <div class="title">
-          <input type="text"  required minlength="10">
+          <input type="text"  required  id="title">
           <span class="line"></span>
-          <label for="">Title</label>
+          <label for="title">Title</label>
         </div>
         <div class="price">
-          <input type="text"  required width="180px">
+          <input type="text"  required  id="price" >
           <span class="line"></span>
-          <label for="">Price</label>
+          <label for="price">Price</label>
         </div>
         <div class="location">
-          <input type="text"  required>
+          <input type="text"  required id="location">
           <span class="line"></span>
-          <label for="">Specific </label>
+          <label for="location">Specific </label>
         </div>
         <div class="des">
-          <input type="text"  required>
-          <label for="">Description</label>
+          <textarea name="name" rows="8" cols="40" required="" id="des"></textarea>
+          <label for="des">Description</label>
         </div>
-        <div class="login">
-          <input type="submit" name="name" value="login" id="login">
+        <div class="submit">
+          <input type="submit" name="name" value="submit" id="submit" ">
         </div>
       </div>
   </form>
+  <script src="jquery-3.1.0.js" charset="utf-8"></script>
+  <script src="check.js" charset="utf-8"></script>
 </body>
 
 </html>

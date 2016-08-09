@@ -1,10 +1,10 @@
 $input-width:100%;
 $word-size:1em;
-
-
+$end-size:0.8em;
 .title,.price,.location,.des{
   position: relative;
 }
+// 屏幕宽度大于600px的时候 居中 且宽度固定
 @media screen and (min-device-width: 600px){
   .container{
     width:400px;
@@ -12,11 +12,10 @@ $word-size:1em;
     margin-right: auto;
   }
 }
-
+// 屏幕宽度小于600px的时候自适应
 @media screen and (max-device-width: 600px){
   .container{
     width: 100%;
-    // margin-left: 5%;
   }
 }
 input{
@@ -28,7 +27,7 @@ input{
   border: none;
   color: #08192D;
 }
-input:focus{
+input:focus,textarea:focus{
   outline: none;
 }
 .line{
@@ -46,32 +45,47 @@ label{
   transition: 0.5s ease;
   color: #91989F;
 }
-input:focus ~ label{
-  top:-0.5%;
-  font-size: 0.8em;
+.des label{
+  top: 30%;
+}
+textarea{
+  width: 100%;
+  border: none;
+  padding-top: 20px;
+  font-size: $word-size;
+  resize: none;
+}
+// 提示文字的动画
+input:focus ~ label,textarea:focus ~ label{
+  top: 1%;
+  font-size: $end-size;
   color: #58B2DC;
 }
-input:valid ~ label{
-  top:-0.5%;
-  font-size: 0.8em;
+input:valid ~ label,textarea:valid ~ label{
+  top: 1%;
+  font-size: $end-size;
+}
+.title,.price,.location,.des,.submit{
+  float: left;
 }
 .title{
-  float: left;
   width: 100%;
 }
 .price{
-  float: left;
   width: 40%;
 }
 .location{
-  float: right;
-  width: calc(60%-2px);
+  width: calc(60% - 2px);
   border-left: 2px #BDC0BA solid;
 }
 .des{
-  float: left;
+  width: $input-width;
+  height: 140px;
+}
+.submit{
+  margin-top: 35px;
   width: 100%;
 }
-#login{
-  padding-top: 0;
+#submit{
+  padding-top: 5px;
 }
