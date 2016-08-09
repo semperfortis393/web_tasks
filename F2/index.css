@@ -34,7 +34,8 @@ label {
   left: 1.5%;
   font-size: 1em;
   transition: 0.5s ease;
-  color: #91989F; }
+  color: #91989F;
+  cursor: auto; }
 
 .des label {
   top: 30%; }
@@ -74,9 +75,17 @@ input:valid ~ label, textarea:valid ~ label {
 
 .submit {
   margin-top: 35px;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 5px 5px 20px #828282; }
 
 #submit {
-  padding-top: 5px; }
+  padding-top: 5px;
+  height: 60px;
+  background-color: #BDC0BA;
+  cursor: pointer; }
+
+.submit:hover {
+  box-shadow: 10px 10px 20px #828282;
+  transition: 1s ease; }
 
 /*# sourceMappingURL=index.css.map */
