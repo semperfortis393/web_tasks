@@ -39,16 +39,16 @@ input:focus,textarea:focus{
 }
 label{
   position: absolute;
-  top:55%;
+  // top:55%;
   left: 1.5%;
-  font-size: $word-size;
+  // font-size: $word-size;
   transition: 0.5s ease;
-  color: #91989F;
+  // color: #91989F;
   cursor: auto;
 }
-.des label{
-  top: 30%;
-}
+// .des label{
+//   top: 30%;
+// }
 textarea{
   width: 100%;
   border: none;
@@ -57,15 +57,15 @@ textarea{
   resize: none;
 }
 // 提示文字的动画
-input:focus ~ label,textarea:focus ~ label{
-  top: 1%;
-  font-size: $end-size;
-  color: #58B2DC;
-}
-input:valid ~ label,textarea:valid ~ label{
-  top: 1%;
-  font-size: $end-size;
-}
+// input:focus ~ label,textarea:focus ~ label{
+//   top: 1%;
+//   font-size: $end-size;
+//   color: #58B2DC;
+// }
+// input:valid ~ label,textarea:valid ~ label{
+//   top: 1%;
+//   font-size: $end-size;
+// }
 .title,.price,.location,.des,.submit{
   float: left;
 }
@@ -97,6 +97,20 @@ input:valid ~ label,textarea:valid ~ label{
 }
 .submit:hover{
   box-shadow: 10px 10px 20px #828282;
-  transition: 1s ease;
-
+  transition: 0.5s ease;
+}
+.label-up{
+  top: 1%;
+  font-size: $end-size;
+  color: #58B2DC;
+}
+.des-label-up{
+  top: 1%;
+  font-size: $end-size;
+  color: #58B2DC;
+}
+.label-down{
+  top:55%;
+  font-size: $word-size;
+  color: #91989F;
 }
