@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
   <title></title>
-    <link href="index.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <form>
-      <div class="container">
-        <div class="title">
-          <input type="text" id="title" >
-          <span class="line"></span>
-          <label for="title" class="label-up" id="titlelabel">Title</label>
-        </div>
-        <div class="price">
-          <input type="text" id="price" >
-          <span class="line"></span>
-          <label for="price" class="label-up" id="pricelabel">Price</label>
-        </div>
-        <div class="location">
-          <input type="text" id="location">
-          <span class="line"></span>
-          <label for="location" class="label-up" id="locationlabel">Specific </label>
-        </div>
-        <div class="des">
-          <textarea name="name" rows="8" cols="40" id="des"></textarea>
-          <label for="des" class="des-label-up" id="deslabel">Description</label>
-        </div>
-        <div class="submit">
-          <input type="submit" name="name" value="submit" id="submit">
-        </div>
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div class="title">
+        <input type="text" class="input" id="title">
+        <span class="line"></span>
+        <label for="title" class="input-label label-up" id="titlelabel">Title</label>
       </div>
+      <div class="price">
+        <input type="text" class="input" id="price">
+        <span class="line"></span>
+        <label for="price" class="input-label label-up" id="pricelabel">Price</label>
+      </div>
+      <div class="location">
+        <input type="text" class="input" id="location">
+        <span class="line"></span>
+        <label for="location" class="input-label label-up" id="locationlabel">Specific </label>
+      </div>
+      <div class="des">
+        <textarea name="name" rows="8" cols="40" class="textarea" id="des"></textarea>
+        <label for="des" class="textarea-label des-label-up" id="deslabel">Description</label>
+      </div>
+      <div class="submit">
+        <input type="submit" name="name" value="submit" id="submit">
+      </div>
+    </div>
   </form>
   <script src="jquery-3.1.0.js" charset="utf-8"></script>
   <script src="check.js" charset="utf-8"></script>

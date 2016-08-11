@@ -12,18 +12,7 @@ $("form").submit(function() {
       alert(rightMsg);
     }
   })
-  // label动画
-
-// function myFunction(){
-//   var titleLength = $("#title").val().length;
-//   if (titleLength=="") {
-//     document.getElementById("titlelabel").className = "label-down";
-//   }
-//   else {
-//     return false;
-//   }
-// }
-
+  // 页面加载后没有输入的文本，给提醒文字加的样式
 $(document).ready(function() {
     var titleValue = $("input").val();
     var desValue = $("#des").val();
@@ -34,31 +23,20 @@ $(document).ready(function() {
       $("label").addClass("label-down");
     }
   })
-  // title
-$("#title").focus(function() {
-  $("#titlelabel").removeClass("label-down");
+  // focus和blur时提醒文字的动画
+$(".input").focus(function() {
+  $(this).siblings(".input-label").removeClass("label-down");
 })
-$("#title").blur(function() {
-    $("#titlelabel").addClass("label-down");
-  })
-  // price
-$("#price").focus(function() {
-  $("#pricelabel").removeClass("label-down");
+$(".input").blur(function() {
+  if ($(this).val() == "") {
+    $(this).siblings(".input-label").addClass("label-down");
+  }
 })
-$("#price").blur(function() {
-    $("#pricelabel").addClass("label-down");
-  })
-  // location
-$("#location").focus(function() {
-  $("#locationlabel").removeClass("label-down");
+$(".textarea").focus(function() {
+  $(this).siblings(".textarea-label").removeClass("label-down");
 })
-$("#location").blur(function() {
-    $("#locationlabel").addClass("label-down");
-  })
-  // description
-$("#des").focus(function() {
-  $("#deslabel").removeClass("label-down");
-})
-$("#des").blur(function() {
-  $("#deslabel").addClass("label-down");
+$(".textarea").blur(function() {
+  if ($(this).val() == "") {
+    $(this).siblings(".textarea-label").addClass("label-down");
+  }
 })

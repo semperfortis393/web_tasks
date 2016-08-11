@@ -1,25 +1,28 @@
-$input-width:100%;
-$word-size:1em;
-$end-size:0.8em;
-.title,.price,.location,.des{
+$input-width: 100%;
+$word-size: 1em;
+$end-size: 0.8em;
+.des,
+.location,
+.price,
+.title {
   position: relative;
 }
 // 屏幕宽度大于600px的时候 居中 且宽度固定
-@media screen and (min-device-width: 600px){
-  .container{
-    width:400px;
+@media screen and (min-device-width: 600px) {
+  .container {
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 // 屏幕宽度小于600px的时候自适应
-@media screen and (max-device-width: 600px){
-  .container{
+@media screen and (max-device-width: 600px) {
+  .container {
     width: 100%;
   }
 }
-input{
-  font:$word-size roboto;
+input {
+  font: $word-size roboto;
   padding-top: 20px;
   width: $input-width;
   height: 30px;
@@ -27,90 +30,78 @@ input{
   border: none;
   color: #08192D;
 }
-input:focus,textarea:focus{
+input:focus,
+textarea:focus {
   outline: none;
 }
-.line{
+.line {
   position: relative;
   display: block;
   height: 2px;
   width: $input-width;
   background-color: #BDC0BA;
 }
-label{
+label {
   position: absolute;
-  // top:55%;
   left: 1.5%;
-  // font-size: $word-size;
   transition: 0.5s ease;
-  // color: #91989F;
   cursor: auto;
 }
-// .des label{
-//   top: 30%;
-// }
-textarea{
+textarea {
   width: 100%;
   border: none;
   padding-top: 20px;
   font-size: $word-size;
   resize: none;
 }
-// 提示文字的动画
-// input:focus ~ label,textarea:focus ~ label{
-//   top: 1%;
-//   font-size: $end-size;
-//   color: #58B2DC;
-// }
-// input:valid ~ label,textarea:valid ~ label{
-//   top: 1%;
-//   font-size: $end-size;
-// }
-.title,.price,.location,.des,.submit{
+.des,
+.location,
+.price,
+.submit,
+.title {
   float: left;
 }
-.title{
+.title {
   width: 100%;
 }
-.price{
+.price {
   width: 40%;
 }
-.location{
+.location {
   width: calc(60% - 2px);
   border-left: 2px #BDC0BA solid;
 }
-.des{
+.des {
   width: $input-width;
   height: 140px;
-
 }
-.submit{
+.submit {
   margin-top: 35px;
   width: 100%;
   box-shadow: 5px 5px 20px #828282;
 }
-#submit{
+#submit {
   padding-top: 5px;
   height: 60px;
   background-color: #BDC0BA;
   cursor: pointer;
 }
-.submit:hover{
+.submit:hover {
   box-shadow: 10px 10px 20px #828282;
   transition: 0.5s ease;
 }
-.label-up{
+.label-up {
   top: 1%;
   font-size: $end-size;
   color: #58B2DC;
 }
-.des-label-up{
+.des-label-up {
   top: 1%;
   font-size: $end-size;
   color: #58B2DC;
 }
-.label-down{
-  top:55%;
+.label-down {
+  top: 55%;
   font-size: $word-size;
   color: #91989F;
 }
