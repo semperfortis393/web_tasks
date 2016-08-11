@@ -69,7 +69,8 @@ textarea {
 .submit {
   margin-top: 35px;
   width: 100%;
-  box-shadow: 5px 5px 20px #828282; }
+  box-shadow: 5px 5px 20px #828282;
+  transition: 0.5s ease; }
 
 #submit {
   padding-top: 5px;
@@ -78,8 +79,7 @@ textarea {
   cursor: pointer; }
 
 .submit:hover {
-  box-shadow: 10px 10px 20px #828282;
-  transition: 0.5s ease; }
+  box-shadow: 10px 10px 20px #828282; }
 
 .label-up {
   top: 1%;

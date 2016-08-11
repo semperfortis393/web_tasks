@@ -6,10 +6,16 @@ $("form").submit(function() {
       alert('标题字数应在6至15位之间');
       return false;
     }
+    // price数字验证
+    var reg = /^\+?[1-9][0-9]*$/;
+    var price = $('#price').val();
+    if (!reg.test(price)) {
+      alert('价格必须是数字且非负')
+      return false;
+    }
     // 全部正确会显示输入正确
     else {
-      var rightMsg = '输入正确';
-      alert(rightMsg);
+      alert('输入正确');
     }
   })
   // 页面加载后没有输入的文本，给提醒文字加的样式
